@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Agios Athanasios Skiers&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="new_external.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="my_javascript.js"></script>
+
+    <style>
+        main{
+            height: 1020px;
+            background-color: #5681d1;
+            text-align: center;
+            color: white;
+        }
+        #top_side{
+            display: flex;
+            flex-direction: row;
+            padding-top: 10%;
+        }
+        #left_side{
+            font-size: 60px;
+            text-align: left;
+            padding-left: 4.5%;
+            padding-top: 7%;
+            width: 65%;
+            font-weight: bold;
+        }
+        #right_side{
+            font-size: large;
+            text-align: left;
+            padding-left: 2%;
+            padding-top: 3%;
+            margin-top: 5%;
+            margin-left: -5%;
+            margin-bottom: -15%;
+            font-weight: 500;
+            width: 35%;
+            background-color: #777bbe;
+            color: white;
+            font-family:Verdana, Tahoma, sans-serif;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        #link_1{
+            text-decoration: none;
+            background-color: #777bbe;
+            padding: 5px 4px 5px 4px;
+            font-size: 1em;
+            text-decoration: underline;
+        }
+        #link_1:hover{
+            background-color:#5681d1;
+        }
+        #bottom_side{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            margin-top: -30px;
+            height: 320px;
+        }
+        .bot{
+            margin-top: 2%;
+            width: 18%;
+            margin-left: 4%;
+            font-size: x-large;
+            background-color:#777bbe;
+            padding: 90px 60px 40px 60px;
+            border-radius: 30px;
+            height: 70px;
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        let my_title = $(document).prop("title"); 
+
+        function movingTitleFunc()
+        {
+            my_title = my_title.substring(1, my_title.length) + my_title.substring(0, 1);
+            $(document).prop("title", my_title)
+            setTimeout("movingTitleFunc()", 200);
+        }
+    </script>
+</head>
+<body onload="document.body.style.opacity='1', movingTitleFunc()">
+<button id="scroll_to_top_but">&uarr;</button>
+    <!--Creating the navigation bar-->
+    <nav style="margin-top:-1.03%;">
+        <div id="logo">
+            <img style="padding-left: 36%; padding-top: 0.5%;" src="images/snowflake.png" alt="" height="35%" width="25%">
+            <p style="color:white; padding-left: 2.5%; margin-top: -0.05%; font-weight: bolder;">&copy; Agios Athanasios Skiers</p>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" style="background-color:rgb(19, 44, 90); color: white;">About us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="login_page.php">Sign In</a></li>
+                <li><a href="sign_up_page.php">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main><!--Top main section-->
+        <div id="top_side">
+            <div id="left_side">
+                These are the <br>
+                Agios Athanasios Skiers!
+            </div>
+    
+            <div id="right_side"><!--Right side of main section containing some info about the team-->
+                The Agios Athanasios Skiers is a semi professional team of skiers that was created by a small group of friends that just loves skiing. Now it has evolved into a big team of skiers with hundreds of members and many more to come!
+                <br>
+                <br>
+                Multiple excursions are planned by the team, in order to visit and ski at the mezmerizing Agios Athanasios ski resort.
+                <br>
+                <h2 style="clear: both; margin-top: 8%;">So...join them <span style="font-size: 30px;">today</span>!</h2>
+            </div>
+        </div>
+        <h1 style="font-size: 40px; margin-top: 25%; margin-left: -54%; background-color: white; color: black; padding-top: 30px; padding-bottom: 15px;">Agios Athanasios Skiers:</h1>
+        <!--Bottom Main Section Boxes-->
+        <div id="bottom_side">
+            <div class="bot">
+                Live to ski!
+            </div>
+            <div class="bot">
+                Love snow!
+            </div>
+            <div class="bot">
+                Just have fun!
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div id="footer_social">
+                <ul>
+                    <li><a href="https://el-gr.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://maps.google.com/" target="_blank"><img src="images/google-maps.png" alt="Google_Maps"></a></li>
+                </ul>
+        </div>
+                <p style="text-align: center; margin-top: 30px; margin-left: 18px;">Follow us on social media!</p>
+                <p style="font-size:small; text-align: center; margin-left: 18px;">Made by &copy; Agios Athanasios Skiers</p>
+    </footer>
+</body>
+</html>

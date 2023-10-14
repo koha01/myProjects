@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="new_external.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="my_javascript.js"></script>
+    
+    <style>
+        main{
+            text-align: center;
+            background-color: #5681d1;
+            color: white;
+            height: 930px;
+        }
+        .required_inputs:invalid{
+            border: 2px solid rgb(119, 5, 5);
+        }
+        #top_inputs{
+            border: 2px white solid;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            padding: 1%;
+        }
+        .radio_answers{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #middle_inputs{
+            border: 2px white solid;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            padding: 1%;
+            margin-top: 1.5%;
+        }
+        #bottom_inputs{
+            border: 2px white solid;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            padding: 1%;
+            margin-top: 1.5%;
+            margin-bottom: 1.5%;
+            height: 230px;
+        }
+        textarea{
+            resize: none;
+            overflow: hidden;
+        }
+        .required_inputs, #number_of_group{
+            padding:10px;
+            border-radius: 10px;
+        }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        input{
+            text-align: center;
+        }
+    </style>
+    <script>
+        let my_title = $(document).prop("title"); 
+
+        function movingTitleFunc()
+        {
+            my_title = my_title.substring(1, my_title.length) + my_title.substring(0, 1);
+            $(document).prop("title", my_title)
+            setTimeout("movingTitleFunc()", 200);
+        }
+    </script>
+</head>
+<body onload="document.body.style.opacity='1', movingTitleFunc()">
+<button id="scroll_to_top_but">&uarr;</button>
+    <!--Navigation section-->
+    <nav style="margin-top:-2.15%;">
+        <div id="logo">
+            <img style="padding-left: 36%; padding-top: 0.5%;" src="images/snowflake.png" alt="" height="35%" width="25%">
+            <p style="color:white; padding-left: 2.5%; margin-top: -0.05%; font-weight: bolder;">&copy; Agios Athanasios Skiers</p>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="contact_us.html"  style="background-color:rgb(19, 44, 90); color: white;">Contact Us</a></li>
+                <li><a href="login_page.php">Sign In</a></li>
+                <li><a href="sign_up_page.php">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1 style="padding-top: 12%;">&copy; Agios Athanasios Skiers Contact Page</h1>
+
+        <!--Creation of the form that when all required fields have been filled out the user can sumbit their inquiry to the team mail-->
+        <form action="mailto:kostisha2@gmail.com" method="post" enctype="text/plain">
+            <div id="top_inputs">
+                Full Name: <input type="text" name="name" class="required_inputs" required placeholder="John Doe">
+               <span style="padding-left: 20px;">Phonenumber: </span><input type="tel" name="phonenumber" size="18" class="required_inputs" required placeholder="6900123456" pattern="[0-9]{10}"><br>
+            </div>
+            <div id="middle_inputs">
+                <h3 style="margin-bottom: 2.5%; margin-top:1%">Will you be joining us on the excursion:</h3>
+                <input type="radio" class="radio_answers" name="radio_but_answer" value="Yes" required> Yes
+                <input type="radio" class="radio_answers" name="radio_but_answer" value="No" required> No
+                <input type="radio" class="radio_answers" name="radio_but_answer" value="I don't know" required> I'm not sure<br>
+                <hr>
+                <h3 style="margin-bottom: 2.5%; margin-top:3%">Number of people in group if you accompany us:</h3>
+                <input type="number" id="number_of_group" name="number_of_group" value="0">
+            </div>
+            <div id="bottom_inputs">
+                <h3 style="margin-bottom: 0; margin-top:1%">Query/Question:</h3><br>
+                <textarea id="contact_text_area" style="width: 550px;border-radius:20px;padding:20px;font-size:15px;" rows="8" required placeholder="I'd like to ask you about..."></textarea><br>
+            </div>
+
+            <input type="submit" id="my_contact_sumbit_button" value="Sumbit query" style="background-color: rgb(24, 90, 24); margin-right: 5%; color:white; font-size: larger; font-weight: bold;border-radius:20px;padding:10px;">
+            <input type="reset" id="my_contact_reset_button" value="Reset" style="background-color: rgb(119, 5, 5); color: white; font-size: larger; font-weight: bold; border-radius:20px;padding:10px 45px 10px 45px;">
+        </form>
+
+        <div style="margin-top: 3.5%;">
+            <span>You can also call us at: 6900123456</span>
+        </div>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div id="footer_social">
+                <ul>
+                    <li><a href="https://el-gr.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://maps.google.com/" target="_blank"><img src="images/google-maps.png" alt="Google_Maps"></a></li>
+                </ul>
+        </div>
+                <p style="text-align: center; margin-top: 30px; margin-left: 18px;">Follow us on social media!</p>
+                <p style="font-size:small; text-align: center; margin-left: 18px;">Made by &copy; Agios Athanasios Skiers</p>
+    </footer>
+</body>
+</html>

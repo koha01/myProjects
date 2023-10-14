@@ -1,0 +1,240 @@
+body{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 1200px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 4s;
+}
+#logo{
+    width: 17%;
+    height: 150px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+nav{
+    background: rgb(26,60,105);
+    background: linear-gradient(146deg, rgba(26,60,105,1) 0%, rgba(26,60,105,1) 23%, rgba(86,129,209,1) 100%);
+    height: 90px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 1200px;
+    margin-top: -50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+    border: 2 px solid;
+    border-radius: 30px;
+    font-weight:bolder;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+}
+#menu{
+    float: right;
+    margin-top: -138px;
+    margin-right: 1.5%;
+}
+header{
+    width: 100%;
+    height: 800px;
+    background-position-y: -280px;
+}
+nav a:hover{
+    color: rgb(25, 228, 255);
+    background-color: rgb(19, 44, 90);
+}
+footer ul li a{
+    padding: 0;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 2%;
+    margin-left: 35%;
+    padding-bottom: 2%;
+}
+footer ul li{
+    float: left;
+    margin-left: 6.7%;
+}
+footer{
+    background-color: #1686C2;
+    color: white;
+    font-weight:bold;
+    padding: 2px;
+}
+
+#greeting{
+    color: white;
+    font-size: xx-large;
+    margin-left: 15%;
+    margin-top: 2.5%;
+    padding-top: 12.5%;
+}
+#greeting_logo{
+    float: left;
+    color: white;
+    text-align: center;
+    margin-left: 6.3%;
+    padding: 1%;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: -0.7%;
+}
+span a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    font-weight:bolder;
+    background-color: rgb(25, 228, 255);
+    padding: 10px;
+}
+span a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #1686C2;
+}
+header{
+    background-image: url(images/BanksGilberti_ColdSprings-9606_875ba1e0-d192-4838-addc-1718ca03829b_1800x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#Team{
+    border-top: 4px #264070 solid;
+    border-bottom: 4px #264070 solid;
+    background-repeat: no-repeat;
+    background-image: url(images/Apres-Andorra-1.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: -50px;
+}
+#team_member1{
+    border-top: 3.5px #1686C2 solid;
+    border-left: 3.5px #1686C2 solid;
+    width: 70%;
+    height: 180px;
+    background-color: #264070;
+    padding: 0.5%;
+    float: left;
+    margin-left: 14%;
+    color: white;
+    font-size: large;
+    text-align: right;
+    margin-top: 20px;
+}
+#team_member2{
+    margin-top: 20px;
+    border-top: 3.5px #1686C2 solid;
+    border-right: 3.5px #1686C2 solid;
+    width: 70%;
+    height: 180px;
+    background-color: #264070;
+    padding: 0.5%;
+    float: left;
+    margin-left: 14%;
+    color: white;
+    font-size: large;
+    text-align: left;
+}
+#team_button{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    border-radius: 30px;
+    font-weight:bolder;
+    padding: 12px;
+    float: left; 
+    margin-left: 41%;
+    margin-top: 3%;
+}
+#agios_athanasios_guide{
+    background-color:#5681d1;
+    height: 810px;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    font-size: large;
+}
+.activities{
+    float: left;
+    margin-top: 5%;
+    margin-right: -35%;
+    margin-left: -5%;
+    text-align: center;
+}
+.activities p{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 13px;
+}
+#activities_box{
+    margin-top: 3%;
+    border-radius: 20px;
+    height: 700px;
+    border: 3px solid white;
+}
+#guide{
+    float: left;
+    margin-top: -32%;
+    margin-left: 45%;
+}
+#pack{
+    float: left;
+    margin-top: -32.5%;
+    margin-left: 12%;
+}
+#guide p{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 13px;
+}
+#pack p{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 13px;
+}
+#gallery{
+    text-align: center;
+    background-color:#235672;
+    color: white;
+    padding: 20px;
+    height: 480px;
+}
+#gallery_photos1{
+    float: left;
+    text-align: left;
+    margin-left: 2%;
+}
+#gallery_photos2{
+    float: left;
+    margin-left: 3%;
+}
+#gallery_photos3{
+    float: right;
+    text-align: right;
+    margin-right: 2%;
+}
+#scroll_to_top_but
+{
+    z-index: 99;
+    position: fixed;
+    bottom: 10%;
+    right: 26%;
+    border: none;
+    border-radius: 50px;
+    background-color: #264070;
+    color: white;
+    display: none;
+    font-size: 25px;
+    outline: none;
+    padding: 25px 35px 25px 35px;
+}

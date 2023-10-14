@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agios Athanasios Skiers News&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="new_external.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="my_javascript.js"></script>
+    
+    <style>
+        main{
+            height: 2100px;
+            background-color: #5681d1;
+            text-align: center;
+            color: white;
+        }
+        hr{
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #494d9e));
+            border: 0;
+            height: 2px;
+            clear: both;
+            width: 100%;
+        }
+        #boxes{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news_boxes{
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            margin-bottom: -30px;
+        }
+
+        .box_left{
+            padding-left: 4%;
+            width: 30%;
+        }
+        .text_boxes{
+            padding-top: 5%;
+            padding-left: 1%;
+            margin-right: 5%;
+            text-align: left;
+            width: 70%;
+        }
+        main a{
+            text-decoration:dotted underline;
+            color: white;
+            border-radius: 30px;
+            padding: 7px;
+        }
+        main a:hover{
+            background-color:#494d9e;
+        }
+    </style>
+    <script>
+        let my_title = $(document).prop("title"); 
+
+        function movingTitleFunc()
+        {
+            my_title = my_title.substring(1, my_title.length) + my_title.substring(0, 1);
+            $(document).prop("title", my_title)
+            setTimeout("movingTitleFunc()", 200);
+        }
+    </script>
+</head>
+<body onload="document.body.style.opacity='1', movingTitleFunc()">
+<button id="scroll_to_top_but">&uarr;</button>
+    <!--Navigation section-->
+    <nav style="margin-top:-2.2%;">
+        <div id="logo">
+            <img style="padding-left: 36%; padding-top: 0.5%;" src="images/snowflake.png" alt="" height="35%" width="25%">
+            <p style="color:white; padding-left: 2.5%; margin-top: -0.05%; font-weight: bolder;">&copy; Agios Athanasios Skiers</p>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="login_page.php">Sign In</a></li>
+                <li><a href="sign_up_page.php">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <h1 style="padding-top: 12%;">Agios Athanasios Skiers Latest News</h1>
+        <h2 style="padding-bottom: 3%;">Be sure to stay tuned!</h2>
+        
+        <!--Creation of boxes that contain several news posts-->
+        <div id="boxes">
+            <div class="news_boxes">
+                <div class="box_left">
+                    <h3>Black Friday Special on prices</h3>
+                    <img src="images/pin.png" alt=""><br>
+                    <h3 style="margin: 10px 0 0 0;">31/3/2023</h3>
+                    
+                </div>
+                <div class="text_boxes">
+                    <span style="color: black; font-weight:bolder; font-size:x-large;">Ski Friday</span> is here and the Agios Athanasios Skiers have decided to give all skiers a chance to get several items at crazy low prices! <a href="login_page.php" style="padding: 3px;">Check it out!</a>                      
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <div class="news_boxes">
+                <div class="box_left">
+                    <h3>New Season Starting</h3>
+                    <img src="images/horseback-riding-C-Lazy-U.jpg" alt="" width="85%" height="54%"><br>
+                    <h3 style="margin: 10px 0 0 0;">12/11/2022</h3>
+                    
+                </div>
+                <div class="text_boxes">
+                    The 2022 season has officially started! We've been informed by the Agios Athanasios resort officials, that the 3 last days loads of snow has covered the resort, leading to it having a 6 inch layer of fresh powder. Additionally, we've learned that 7 out of the 10 pists and 5 out of the 6 ski lifts are going to be operational!
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="news_boxes">
+                <div class="box_left">
+                    <h4>Summer Training Season Official Start</h4>
+                    <img src="images/ragde_rull.jpg" alt="" width="85%" height="54%"><br>
+                    <h3 style="margin: 10px 0 0 0;">20/06/2022</h3>
+                    
+                </div>
+                <div class="text_boxes">
+                    Get ready skiers, this whole summer we will be getting our bodies ready and all trained up, in order to be able to visit Agios Athanasios during the 2022 winter season. 
+                </div>
+            </div>
+    
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <div class="news_boxes">
+                <div class="box_left">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <img src="images/xSkiing_technique_body_posture_carving.jpg.pagespeed.ic.CdSTyoZMUi.jpg" alt="" width="85%" height="54%"><br>
+                    <h3 style="margin: 10px 0 0 0;">29/2/2022</h3>
+                    
+                </div>
+                <div class="text_boxes">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec imperdiet felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vitae eleifend diam. Nam iaculis ante id nulla dapibus accumsan. Etiam feugiat et mauris ut accumsan. Proin in nisi fringilla, fermentum eros in, commodo leo. Mauris mollis condimentum tellus, rutrum molestie nunc efficitur nec. Suspendisse porta libero lacus, vitae gravida quam tempor ut.
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <div class="news_boxes">
+                <div class="box_left">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <img src="images/xSkiing_technique_body_posture_carving.jpg.pagespeed.ic.CdSTyoZMUi.jpg" alt="" width="85%" height="54%"><br>
+                    <h3 style="margin: 10px 0 0 0;">29/2/2022</h3>
+                    
+                </div>
+                <div class="text_boxes">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec imperdiet felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vitae eleifend diam. Nam iaculis ante id nulla dapibus accumsan. Etiam feugiat et mauris ut accumsan. Proin in nisi fringilla, fermentum eros in, commodo leo. Mauris mollis condimentum tellus, rutrum molestie nunc efficitur nec. Suspendisse porta libero lacus, vitae gravida quam tempor ut.
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1>Be sure to <a href="contact_us.html">contact us</a> for any inquiry</h1>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div id="footer_social">
+                <ul>
+                    <li><a href="https://el-gr.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://maps.google.com/" target="_blank"><img src="images/google-maps.png" alt="Google_Maps"></a></li>
+                </ul>
+        </div>
+                <p style="text-align: center; margin-top: 30px; margin-left: 18px;">Follow us on social media!</p>
+                <p style="font-size:small; text-align: center; margin-left: 18px;">Made by &copy; Agios Athanasios Skiers</p>
+    </footer>
+</body>
+</html>
